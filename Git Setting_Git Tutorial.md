@@ -20,7 +20,7 @@ _Last updated: 2020-12-07_
 git config --global user.name "사용자 이름"
 ```
 
-![bash-username](https://git.lsis.com/cbchun/dx-lab-wiki/raw/master/Git%20Setting/image/bash-username.png)
+![bash-username](./image/bash-username.png)
 
 그래서 본인 또는 같은 `repository`를 사용하는 다른 사용자들에게 보여지고 싶은 이름으로 설정하면 됩니다. 원한다면 사용하는 기기 마다 다른 이름으로 설정해 차이를 나타낼 수 있습니다.
 
@@ -65,7 +65,7 @@ git config --global http.sslVerify false
 #### 한글 경로
 한글 경로 즉, 한글로 기재된 폴더명과 파일명은 `gitLab`에서 `Loading commit data...`오류를 일으킵니다. 데이터는 정상적으로 업로드 되지만 `Last update`부분이 가려져 시간을 알 수 없게 되기 때문에 폴더명과 파일명은 영어로 지정해야 합니다.
 
-![gitlab-error](https://git.lsis.com/cbchun/dx-lab-wiki/raw/master/Git%20Setting/image/gitlab-error.PNG)
+![gitlab-error](./image/gitlab-error.PNG)
 <br>
 
 ---
@@ -99,7 +99,7 @@ git clone https://git.lsis.com/cbchun/dx-lab-wiki.git
 로컬 `repository`의 데이터를 `remote repository`에 업로드 해보겠습니다.
 
 #### 1. `add`
-![bash-add](https://git.lsis.com/cbchun/dx-lab-wiki/raw/master/Git%20Setting/image/bash-add.PNG)
+![bash-add](./image/bash-add.PNG)
 
 첫번째 명령어는 `add`입니다.
 ``` git
@@ -110,26 +110,26 @@ git add .
 <br>
 
 #### 2. `commit`
-![bash-commit](https://git.lsis.com/cbchun/dx-lab-wiki/raw/master/Git%20Setting/image/bash-commit.PNG)
+![bash-commit](./image/bash-commit.PNG)
 
 다음 명령어는 `commit`입니다.
 ```console
 git commit -m "메세지"
 ```
-![git-commit](https://git.lsis.com/cbchun/dx-lab-wiki/raw/master/Git%20Setting/image/commit.png)
+![git-commit](./image/commit.png)
 
 `commit`은 앞서 `staging area`에 기록된 내용을 `git repository`에 세기는 역할을 합니다. 그러므로 과거에 `commit`된 내용을 불러올 수 있습니다. `commit`을 실시할 때에는 `-m`이 강제적으로 붙습니다. 이는 메세지 옵션이며 실시하는 `commit`으로 인해 어떠한 사항이 적용 되는지 알려주기 위함입니다. 마치 개발 중 함수를 작성하고 알아보기 편하게 주석을 다는 것과 유사합니다.
 
 <br>
 
 #### 3. `push`
-![bash-push](https://git.lsis.com/cbchun/dx-lab-wiki/raw/master/Git%20Setting/image/bash-push.PNG)
+![bash-push](./image/bash-push.PNG)
 
 마지막 명령어는 `push`입니다.
 ``` git
 git push
 ```
-![git-push](https://git.lsis.com/cbchun/dx-lab-wiki/raw/master/Git%20Setting/image/push.png)
+![git-push](./image/push.png)
 
 `push`는 `commit`되어진 `local repository`를 `remote repository`에 업로드하는 명령어 입니다.
 
@@ -140,7 +140,7 @@ git push
 ``` git
 git pull
 ```
-![git-pull](https://git.lsis.com/cbchun/dx-lab-wiki/raw/master/Git%20Setting/image/pull.png)
+![git-pull](./image/pull.png)
 
 내 local `repository`에 다른 `repository`의 정보를 가져오기 위해서는 `pull`을 사용합니다.
 
@@ -148,11 +148,11 @@ git pull
 
 
 #### 5. `branch`
-![git-branch](https://git.lsis.com/cbchun/dx-lab-wiki/raw/master/Git%20Setting/image/branch.png)
+![git-branch](./image/branch.png)
 
 브랜치란 독립적으로 어떤 작업을 진행하기 위한 개념입니다. 필요에 의해 만들어지는 각각의 브랜치는 다른 브랜치의 영향을 받지 않기 때문에, 여러 작업을 동시에 진행할 수 있습니다.
 
-![git-merged](https://git.lsis.com/cbchun/dx-lab-wiki/raw/master/Git%20Setting/image/merged.png)
+![git-merged](./image/merged.png)
 ``` git
 git branch "브랜치 이름"
 
@@ -163,7 +163,7 @@ git branch bermmie-work-desktop
 ``` git
 git checkout bermmie-work-desktop
 ```
-![bash-checkout](https://git.lsis.com/cbchun/dx-lab-wiki/raw/master/Git%20Setting/image/bash-checkout.PNG)
+![bash-checkout](./image/bash-checkout.PNG)
 
 그리고 `checkout` 명령어로 사용중인 브랜치를 변경할 수 있습니다.
 <br>
@@ -173,7 +173,7 @@ git checkout bermmie-work-desktop
 
 브랜치 전환 후, 이 시점까지의 이력을 보면 다음과 같습니다.
 
-![ym](https://git.lsis.com/cbchun/dx-lab-wiki/raw/master/Git%20Setting/image/ym01.PNG)
+![ym](./image/ym01.PNG)
 
 브랜치 병합은 `merge` 명령어로 실행합니다. 이 명령어에 병합할 커밋 이름을 넣어 실행하면, 지정한 커밋 내용이 'HEAD'가 가리키고 있는 브랜치에 넣어집니다. <br> 
 'HEAD'는 현재 사용중인 브랜치에 위치하게 됩니다.
@@ -186,7 +186,7 @@ $ git merge bermmie-work-desktop
 ```
 이제 'master' 브랜치가 가리키는 커밋이 'bermmie-work-desktop'과 같은 위치로 이동했습니다. 이런 방식의 병합을 'fast-forward (빨리감기) 병합'이라고 합니다.
 
-![ym](https://git.lsis.com/cbchun/dx-lab-wiki/raw/master/Git%20Setting/image/ym02.PNG)
+![ym](./image/ym02.PNG)
 
 
 ***`pull vs merge`의 차이점*** <br>
