@@ -2,7 +2,7 @@
 _Last updated: 2020-12-07_
 
 ## Quick Start
-![intro](https://git.lsis.com/cbchun/dx-lab-wiki/raw/master/Git%20Setting/image/intro.png)
+![intro](./image/intro.png)
 
 ### 0. 목차
 1. 사용자 정보 설정
