@@ -16,7 +16,7 @@ _Last updated: 2020-12-07_
 #### 사용자 이름 설정
 우선 git을 사용하는 사용자의 이름을 지정해줍니다.
 사용자 이름은 `commit`을 하게 되면 `git log`에 `author`로 기재 됩니다.
-``` git
+```git
 git config --global user.name "사용자 이름"
 ```
 
