@@ -195,6 +195,16 @@ $ git merge bermmie-work-desktop
 
 <br>
 
+#### 7. `local branch` → `master` 로 병합
+local branch에서 작업한 내용을 master branch로 병합하는 과정입니다.
+``` git
+$ git checkout master
+Switched to branch 'master'
+
+$ git pull origin daniel-work-desktop
+$ git push
+```
+
 ---
 
 ## 기타 사항
